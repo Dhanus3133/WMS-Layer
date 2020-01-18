@@ -70,4 +70,4 @@
 
 (22) A pop-up tab opens and shows the Layer.
 
-![22](img/22.png)
+![22](img/22.PNG)
