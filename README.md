@@ -1,4 +1,4 @@
-**Web map that displays a WMS layer**
+#Web map that displays a WMS layer
 
 (1) Install Geoserver from http://geoserver.org/release/stable.
 
