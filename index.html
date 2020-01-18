@@ -1,8 +1,44 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<title>Web map that displays a WMS layer</title>
-<body>
-    <a href="http://localhost:8080/geoserver/wms/reflect?format=application/openlayers&layers=name:world">
-      <img src="http://localhost:8080/geoserver/wms/reflect?layers=name:world&width=750"/></a>
- </body>
- </html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/css/ol.css" type="text/css">
+    <style>
+      .map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/build/ol.js"></script>
+    <title>OpenLayers</title>
+  </head>
+  <body>
+    <h2>Cfeated Map</h2>
+    <div id="map" class="map"></div>
+    <script type="text/javascript">
+      var map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          }),
+          new ol.layer.Tile({
+    				source: new ol.source.TileWMS({
+        		url: 'http://localhost:8080/geoserver/dhanus/wms?',
+       			params: {
+              'LAYERS': 'name:world',
+              'VERSION': '1.1.1',
+              'FORMAT': 'image/png',
+              'TILED': true
+        		},
+    			})
+				})
+        ],
+        view: new ol.View({
+          center: ol.proj.fromLonLat([-88, 35]),
+          zoom: 4
+        })
+      });
+    </script>
+  </body>
+</html> 
