@@ -2,7 +2,7 @@
 
 (1) Install Geoserver from http://geoserver.org/release/stable.
 
-(2) Then open http://localhost:8080/geoserver/web/ and login with your username and password, given while you’re installing the Geoserver process in Point 1. The default username is admin and the password is geoserver.
+(2) Then open http://localhost:8080/geoserver/web/ and login with your username and password, given while you’re installing the Geoserver process in Point 1. The default username is `admin` and the password is `geoserver`.
 
 (3) On your Left, `Select Data` → `Workspaces`. 
 
