@@ -6,7 +6,7 @@
 
     And then using the value of `code=5141`.
     
-    ![(2nd.PNG)
+    ![](2nd.PNG)
     
     Then Finally using the value of `fclass='public_building`.
     
