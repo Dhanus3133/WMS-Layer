@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/css/ol.css" type="text/css">
+    <style>
+      .map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/build/ol.js"></script>
+    <title>OpenLayers</title>
+  </head>
+  <body>
+    <h2>Created Map</h2>
+    <div id="map" class="map"></div>
+    <script type="text/javascript">
+      var map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          }),
+          new ol.layer.Tile({
+    				source: new ol.source.TileWMS({
+        		url: 'http://localhost:8080/geoserver/dhanus/wms?',
+       			params: {
+              'LAYERS': 'name:world',
+              'VERSION': '1.1.1',
+              'FORMAT': 'image/png',
+              'TILED': true
+        		},
+    			})
+				})
+        ],
+        view: new ol.View({
+          center: ol.proj.fromLonLat([-45, 90]),
+          zoom: 4
+        })
+      });
+      map.addLayer(layer1);
+    </script>
+    <form onSubmit='func()'>
+            <label>CQL Filter</label>
+            <input id="code" type="text">
+            <input type="submit" >
+    </form>
+  </body>
+</html> 
