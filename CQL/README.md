@@ -1,5 +1,7 @@
 # Using Common Query Language (CQL) in WMS Layer
 
+Get the new ShapeFile from https://download.geofabrik.de/asia/sri-lanka.html
+
 (1) Select `three dot`on the Openlayer Layer Preview 
     
 ![1](1st.PNG)
