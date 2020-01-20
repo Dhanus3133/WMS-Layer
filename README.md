@@ -71,3 +71,5 @@
 (22) A pop-up tab opens and shows the Layer.
 
 ![22](img/22.PNG)
+
+### CONTINUE WITH CQL - https://github.com/Dhanus3133/WMS-Layer/tree/master/CQL
