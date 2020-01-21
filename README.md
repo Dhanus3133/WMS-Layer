@@ -72,4 +72,22 @@
 
 ![22](img/22.PNG)
 
-### CONTINUE WITH CQL - https://github.com/Dhanus3133/WMS-Layer/tree/master/CQL
+### CONTINUE WITH CQL
+
+# Using Common Query Language (CQL) in WMS Layer
+
+Get the new ShapeFile from https://download.geofabrik.de/asia/sri-lanka.html
+
+(1) Select `three dot`on the Openlayer Layer Preview 
+    
+![1](CQL/1st.PNG)
+
+(2) And then using the value of `code=5141`.
+    
+![2](CQL/2nd.PNG)
+    
+(3) Then Finally using the value of `fclass='public_building'`.
+    
+![3](CQL/3rd.PNG)
+    
+    
