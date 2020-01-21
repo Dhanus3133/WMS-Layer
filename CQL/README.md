@@ -10,7 +10,7 @@ Get the new ShapeFile from https://download.geofabrik.de/asia/sri-lanka.html
     
 ![2](2nd.PNG)
     
-(3) Then Finally using the value of `fclass='public_building`.
+(3) Then Finally using the value of `fclass='public_building'`.
     
 ![3](3rd.PNG)
     
